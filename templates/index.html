@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hate Speech Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hate Speech Detection</h1>
+        <form id="postForm">
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="4" cols="50"></textarea>
+            </div>
+            <button type="submit" class="btn">
+                <Span>Add Post</Span>
+            </button>
+        </form>
+
+        <div id="errorContainer" class="error-message"></div>
+
+        <h2>Posts</h2>
+        <ul id="postList" class="post-list">
+            <!-- Posts will be dynamically added here -->
+        </ul>
+        <button id="viewAllPosts"></button>
+        <button id="logoutButton" class="btn">Logout</button> <!-- Logout button -->
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
